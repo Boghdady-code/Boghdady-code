@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Ahmed Mohamed Boghdady</h1>
+<h1 align="center">Hi , I'm Ahmed Mohamed Boghdady</h1>
 <h3 align="center">An Angular Developer from Egypt</h3>
 
 <h3 align="center">Connect with me:</h3>
