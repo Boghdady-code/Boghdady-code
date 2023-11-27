@@ -1,0 +1,72 @@
+.projects {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  .heading {
+    h1 {
+      text-transform: uppercase;
+    }
+  }
+  .project-cards {
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    .card {
+      /* From https://css.glass */
+      background: rgba(4, 28, 50, 0.36);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(14.7px);
+      -webkit-backdrop-filter: blur(14.7px);
+      border: 1px solid #09c;
+      color: #fff;
+      padding: 10px !important;
+      height: 370px;
+      img {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      .card-body {
+        border-top: 1px solid #09c;
+        text-align: center;
+        .card-title {
+          font-size: 15px;
+        }
+        .card-text {
+          font-size: 12px;
+          // color: rgb(179, 174, 174);
+          line-height: 1.8;
+          text-align: center;
+          height: 100px;
+        }
+        .card-icons a {
+          color: #fff;
+        }
+        .card-icons i {
+          cursor: pointer;
+          &:hover {
+            color: rgb(3, 177, 235);
+          }
+        }
+      }
+    }
+  }
+}
+
+.git-btn {
+  width: 100%;
+  text-align: center;
+  .btn {
+    color: #09c;
+    border: 1px solid #09c;
+    &:hover {
+      border-color: rgb(3, 177, 235);
+      background-color: #064663;
+      color: rgb(3, 177, 235);
+    }
+  }
+}

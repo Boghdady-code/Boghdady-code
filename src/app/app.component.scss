@@ -1,0 +1,58 @@
+.loader {
+  padding: 10px;
+  border: 3px solid #09c;
+  width: 60px;
+  height: 60px;
+  color: #09c;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: effect1 1s infinite ease-in-out;
+  -webkit-animation: effect1 1s infinite ease-in-out;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  &:hover {
+    border-color: rgb(3, 177, 235);
+    background-color: #064663;
+  }
+}
+
+@keyframes effect1 {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 50%;
+  }
+
+  50% {
+    transform: rotate(90deg);
+    border-radius: 10%;
+  }
+
+  100% {
+    transform: rotate(180deg);
+    border-radius: 50%;
+  }
+}
+
+.loader-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
