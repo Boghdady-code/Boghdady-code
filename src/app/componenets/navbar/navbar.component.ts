@@ -7,11 +7,12 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
 })
 export class NavbarComponent implements OnInit {
 
-  @ViewChild ('listresponsive') listResponsive!:ElementRef;
+
+  constructor() { }
+  @ViewChild ('responsive') responsive!:ElementRef;
   @ViewChild ('line1') line1!:ElementRef;
   @ViewChild ('line2') line2!:ElementRef;
   @ViewChild ('line3') line3!:ElementRef;
-  constructor() { }
 
 
   @HostListener ('window:scroll')
@@ -29,7 +30,7 @@ export class NavbarComponent implements OnInit {
   }
 
   toggleMenu (){
-    this.listResponsive.nativeElement.classList.toggle('active-burger');
+    this.responsive.nativeElement.classList.toggle('active-burger');
     this.line1.nativeElement.classList.toggle('first');
     this.line2.nativeElement.classList.toggle('second');
     this.line3.nativeElement.classList.toggle('third');
@@ -53,7 +54,6 @@ export class NavbarComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.toggleMenu();
   }
 
 }

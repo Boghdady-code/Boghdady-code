@@ -2,8 +2,49 @@
   <div class="heading text-center">
     <h1 class="text-white uppercase mb-5">Projects</h1>
   </div>
-  <div class="project-cards row">
-    <div class="card col-md-3">
+  <div class="project-cards row" [class.fading-card]="fade == true">
+    <div class="card col-md-4">
+      <div class="card-img">
+        <img src="assets/github.png" class="w-100 img-fluid" alt="" />
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">E-Commerce Backend Project</h4>
+        <p class="card-text">
+          E-commerce Restful API project, It contains most of ecommerce's functions and features.
+          (Categories CRUD Operations, SubCategories CRUD Operations, Category to get Subcategory - Child Route, Brand
+          CRUD operations, Products CRUD operations, Reviews CRUD operations, Wishlist [Get Logged User Wishlist, Add
+          Product to wishlist- delete product from wishlist], User CRUD Operations, Authentication, Protect Routes,
+          Authorization [Admin - User], Password Reset over user's email address (nodemailer), Coupons CRUD operations,
+          Cart Operations, Payment online (Using Stripe API integration) or Payment using cash, Advanced Error Handling,
+          Validation Layer, Uploading single or multiple file using multer, API Features [Pagination, Sorting, Search,
+          Filter, Limit Fields])
+        </p>
+        <div class="card-icons d-flex justify-content-center align-items-center gap-3">
+          <a href="https://github.com/Boghdady-code/nodejs-ecommerce-backend"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="card col-md-4">
+      <div class="card-img">
+        <img src="assets/github.png" class="w-100 img-fluid" alt="" />
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Courses Backend Project</h4>
+        <p class="card-text">
+          contains the CRUD operations (Create a Course - Read Courses (With pagination) - Update a Course - Delete a
+          Course),
+          Authentication (Login, Registration, get all registered users (with pagination) ), Role (User, Admin), Route
+          Protection.
+          Admin Role: Can Create a new Course, Update a Course, Delete a Course.
+          User Role : Can Read Courses and Get a Specific Course.
+
+        </p>
+        <div class="card-icons d-flex justify-content-center align-items-center gap-3">
+          <a href="https://github.com/Boghdady-code/courses-app-nodejs-api"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="card col-md-4">
       <div class="card-img">
         <img src="assets/project-1.png" class="w-100 img-fluid" alt="" />
       </div>
@@ -13,19 +54,13 @@
           This is an e-Commerce Project with (Login, Registration, Products, get
           a product details, All of cart functions, get products by category)
         </p>
-        <div
-          class="card-icons d-flex justify-content-center align-items-center gap-3"
-        >
-          <a href="https://github.com/Boghdady-code/E-Commerce-Angular"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://agonisteshop.000webhostapp.com/"
-            ><i class="fa-solid fa-up-right-from-square"></i
-          ></a>
+        <div class="card-icons d-flex justify-content-center align-items-center gap-3">
+          <a href="https://github.com/Boghdady-code/E-Commerce-Angular"><i class="fab fa-github"></i></a>
+          <a href="https://agonisteshop.000webhostapp.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
         </div>
       </div>
     </div>
-    <div class="card col-md-3">
+    <div class="card col-md-4">
       <div class="card-img">
         <img src="assets/project-2.png" class="w-100 img-fluid" alt="" />
       </div>
@@ -36,20 +71,14 @@
           Registration, Add Post, Add Comment, Pagination), This Project made
           with API
         </p>
-        <div
-          class="card-icons d-flex justify-content-center align-items-center gap-3"
-        >
-          <a
-            href="https://github.com/Boghdady-code/Social-Media-Application---PureJS-"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://agonist.000webhostapp.com/"
-            ><i class="fa-solid fa-up-right-from-square"></i
-          ></a>
+        <div class="card-icons d-flex justify-content-center align-items-center gap-3">
+          <a href="https://github.com/Boghdady-code/Social-Media-Application---PureJS-"><i
+              class="fab fa-github"></i></a>
+          <a href="https://agonist.000webhostapp.com/"><i class="fa-solid fa-up-right-from-square"></i></a>
         </div>
       </div>
     </div>
-    <div class="card col-md-3">
+    <div class="card col-md-4">
       <div class="card-img">
         <img src="assets/project-3.png" class="w-100 img-fluid" alt="" />
       </div>
@@ -58,19 +87,14 @@
         <p class="card-text">
           A Responsive Dashboard Template made by HTML and CSS
         </p>
-        <div
-          class="card-icons d-flex justify-content-center align-items-center gap-3"
-        >
-          <a href="https://github.com/Boghdady-code/Dashboard-Template"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://boghdady-code.github.io/Dashboard-Template/"
-            ><i class="fa-solid fa-up-right-from-square"></i
-          ></a>
+        <div class="card-icons d-flex justify-content-center align-items-center gap-3">
+          <a href="https://github.com/Boghdady-code/Dashboard-Template"><i class="fab fa-github"></i></a>
+          <a href="https://boghdady-code.github.io/Dashboard-Template/"><i
+              class="fa-solid fa-up-right-from-square"></i></a>
         </div>
       </div>
     </div>
-    <div class="card col-md-3">
+    <div class="card col-md-4">
       <div class="card-img">
         <img src="assets/project-4.png" class="w-100 img-fluid" alt="" />
       </div>
@@ -81,19 +105,14 @@
           changing landing images, Website Color changing, Control Website),
           Used Local Storage To implement these changes.
         </p>
-        <div
-          class="card-icons d-flex justify-content-center align-items-center gap-3"
-        >
-          <a href="https://github.com/Boghdady-code/Special-Design-Pure-JS"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://boghdady-code.github.io/Special-Design-Pure-JS/"
-            ><i class="fa-solid fa-up-right-from-square"></i
-          ></a>
+        <div class="card-icons d-flex justify-content-center align-items-center gap-3">
+          <a href="https://github.com/Boghdady-code/Special-Design-Pure-JS"><i class="fab fa-github"></i></a>
+          <a href="https://boghdady-code.github.io/Special-Design-Pure-JS/"><i
+              class="fa-solid fa-up-right-from-square"></i></a>
         </div>
       </div>
     </div>
-    <div class="card col-md-3">
+    <div class="card col-md-4">
       <div class="card-img">
         <img src="assets/project-5.png" class="w-100 img-fluid" alt="" />
       </div>
@@ -103,19 +122,13 @@
           Project using Pure JS to describe the CRUD concept, Also added the
           Search concept into it
         </p>
-        <div
-          class="card-icons d-flex justify-content-center align-items-center gap-3"
-        >
-          <a href="https://github.com/Boghdady-code/CURD--PureJS"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://boghdady-code.github.io/CURD--PureJS/"
-            ><i class="fa-solid fa-up-right-from-square"></i
-          ></a>
+        <div class="card-icons d-flex justify-content-center align-items-center gap-3">
+          <a href="https://github.com/Boghdady-code/CURD--PureJS"><i class="fab fa-github"></i></a>
+          <a href="https://boghdady-code.github.io/CURD--PureJS/"><i class="fa-solid fa-up-right-from-square"></i></a>
         </div>
       </div>
     </div>
-    <div class="card col-md-3">
+    <div class="card col-md-4">
       <div class="card-img">
         <img src="assets/project-6.png" class="w-100 img-fluid" alt="" />
       </div>
@@ -124,24 +137,15 @@
         <p class="card-text">
           Animated HTML and CSS design Made by me, Responsive Design
         </p>
-        <div
-          class="card-icons d-flex justify-content-center align-items-center gap-3"
-        >
-          <a
-            href="https://github.com/Boghdady-code/Animated-HTML-and-CSS-Template"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a
-            href="https://boghdady-code.github.io/Animated-HTML-and-CSS-Template/"
-            ><i class="fa-solid fa-up-right-from-square"></i
-          ></a>
+        <div class="card-icons d-flex justify-content-center align-items-center gap-3">
+          <a href="https://github.com/Boghdady-code/Animated-HTML-and-CSS-Template"><i class="fab fa-github"></i></a>
+          <a href="https://boghdady-code.github.io/Animated-HTML-and-CSS-Template/"><i
+              class="fa-solid fa-up-right-from-square"></i></a>
         </div>
       </div>
     </div>
   </div>
   <div class="git-btn">
-    <a href="https://github.com/Boghdady-code?tab=repositories" class="btn mt-5"
-      >See More on GitHub</a
-    >
+    <a href="https://github.com/Boghdady-code?tab=repositories" class="btn mt-5">See More on GitHub</a>
   </div>
 </div>

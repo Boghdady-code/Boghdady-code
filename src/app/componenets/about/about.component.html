@@ -1,6 +1,10 @@
 <div class="container about">
   <div class="row">
-    <div class="col-md-8 loaded-txt">
+    <div
+      class="col-md-8"
+      id="about-loaded"
+      [class.moving-text]="aboutLoading === true"
+    >
       <h1 class="text-white">About Me</h1>
       <p class="content-text">
         Hello, There. <br />I'm Ahmed Mohamed Boghdady, Graduated from faculty
@@ -20,19 +24,22 @@
             <li><span>SASS</span></li>
             <li><span>Tailwind</span></li>
             <li><span>Bootstrap</span></li>
+            <li><span>NodeJS</span></li>
+            <li><span>MongoDB</span></li>
           </ul>
           <ul class="col-md-6 ul-2 w-50">
-            <li><span>Jasmine</span></li>
+            <li><span>Karma</span></li>
             <li><span>HTML</span></li>
             <li><span>CSS</span></li>
             <li><span>Git</span></li>
-            <li><span>API</span></li>
+            <li><span>Restful API</span></li>
             <li><span>Angular Materials</span></li>
+            <li><span>Express JS</span></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4" [class.fading-image]="imageFading === true">
       <div class="img">
         <img src="assets/me.jpeg" class="w-100 img-fluid me" alt="" />
       </div>

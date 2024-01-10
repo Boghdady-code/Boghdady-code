@@ -3,16 +3,15 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  loading:boolean = true;
-  constructor() { }
+  loading: boolean = true;
+  constructor() {}
   ngOnInit(): void {
-       setTimeout(() => {
-      this.loading=false;
-
-    }, 1000);
+    setTimeout(() => {
+      this.loading = false;
+    }, 3000);
   }
 
   title = 'portofolio';

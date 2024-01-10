@@ -3,19 +3,20 @@ import { Component, HostListener, OnInit } from '@angular/core';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+  styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent implements OnInit {
-  constructor() { }
+  constructor() {}
+  aboutLoading = false;
+  imageFading = false;
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
-      document.querySelector('.loaded-txt')?.classList.add('moving-text');
+    console.log(window.scrollY);
+    if (window.scrollY > 370) {
+      this.aboutLoading = true;
+      this.imageFading = true;
+    }
   }
 
-
-  ngOnInit(): void {
-
-
-  }
-
+  ngOnInit(): void {}
 }

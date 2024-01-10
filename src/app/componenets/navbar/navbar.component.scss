@@ -203,7 +203,7 @@
     flex-direction: column;
     position: absolute;
     left: 0;
-    bottom: -250px;
+    bottom: -305px;
     width: 100%;
     background-color: rgba(4, 28, 50, 0.837);
     padding: 15px;
@@ -211,5 +211,8 @@
 
   .header .user-links a {
     margin: 100px;
+  }
+  .header .user-links li {
+    margin-bottom: 10px;
   }
 }

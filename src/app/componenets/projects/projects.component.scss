@@ -11,8 +11,13 @@
     gap: 10px;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s;
+    -webkit-transition: all 0;
+    -moz-transition: all 0;
+    -ms-transition: all 0;
+    -o-transition: all 0;
+    position: relative;
     .card {
-      /* From https://css.glass */
       background: rgba(4, 28, 50, 0.36);
       border-radius: 16px;
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -21,30 +26,39 @@
       border: 1px solid #09c;
       color: #fff;
       padding: 10px !important;
-      height: 370px;
-      img {
+      height: 800px;
+      img: {
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
         margin-bottom: 10px;
+        height: 200px;
       }
       .card-body {
         border-top: 1px solid #09c;
         text-align: center;
+        height: 500px;
         .card-title {
           font-size: 15px;
+          height: 50px;
         }
         .card-text {
           font-size: 12px;
           // color: rgb(179, 174, 174);
           line-height: 1.8;
           text-align: center;
-          height: 100px;
+          height: 400px;
+        }
+        .card-icons {
+          height: 50px;
         }
         .card-icons a {
           color: #fff;
+          width: 16px;
+          height: 16px;
+          height: 50%;
         }
         .card-icons i {
           cursor: pointer;
@@ -68,5 +82,25 @@
       background-color: #064663;
       color: rgb(3, 177, 235);
     }
+  }
+}
+
+.fading-card {
+  animation: fadingin 5s;
+  -webkit-animation: fadingin 5s;
+}
+
+@keyframes fadingin {
+  0% {
+    opacity: 0;
+    bottom: -20px;
+  }
+  50% {
+    opacity: 0.5;
+    bottom: -10px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
   }
 }
