@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Ahmed Mohamed Boghdady</h1>
 <h3 align="center">Junior MEAN Stack Developer from Egypt</h3>
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Connect with me: ahmedboghdady18@gmail.com</h3>
 <p align="left">
 </p>
 
